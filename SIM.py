@@ -1,3 +1,22 @@
+"""
+Codigo inicial da simulacao de cores e aprendizado. (Pretendo colocar mais comentarios no codigo)
+A entrada é a configuração do circuito, sendo que é feita em duas partes:
+1 - Entrada de quatro cores em ordem, sendo a mais perto do inicio a primeira a ser inserida e a mais perto do
+    final a ultima a ser inserida. Considera-se três cores possíveis: 
+    'R' para vermelho
+    'G' para verde
+    'B' para azul
+2 - Entrada da direcao correta de cada cor. Primeiro é pedida a direção da cor vermelha(R), sem seguida a verde(G) e por ultimo
+    a azul(B). As direcoes possiveis sao:
+    0 - A direita da orientação original do robô ao chegar naquele cruzamento
+    1 - Em frente, mesma orientação do robô ao chegar naquele cruzamento
+    2 - A esquerda da orientacao original do robô ao chegar naquele cruzamento
+    IMPORTANTE: para que o programa faça sentido, não é pode existir duas ou mais cores com a mesma direção atribuída.
+    Atribuir uma direção diferente p cada cor!
+
+A saída consiste nos passos que o robô executa para ir do inicio ao final do circuito, incluindo o processo de aprendizado das
+cores e direcoes.
+"""
 cores = ["R", "G", "B"]
 direcoes_cor = []
 #Associa uma direcao(com relacao a original do robo) a um numero
